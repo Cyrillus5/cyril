@@ -1,0 +1,57 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+.Contact{
+    position: inherit;
+    width: 100%;
+    color: vars.$color-text;
+    margin-top : 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-h1{
+        font-size: 2rem;
+        margin:1rem;
+        margin-top: 1.5rem;
+        font-weight: bold;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .3em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+    }
+
+    &-email{
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+
+    &-linkedin{
+        position: relative;
+        width: 150px;
+    }
+
+    &-GitHub{
+        position: relative;
+        width: 150px;
+    }
+
+}
