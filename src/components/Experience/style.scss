@@ -39,7 +39,7 @@
         text-align: left;
         margin-top: 2rem;
         overflow: auto !important;
-        height: 400px;
+        // height: 400px;
         
         &::-webkit-scrollbar{
             background-color: color.adjust(vars.$color-button, $alpha: -0.9);

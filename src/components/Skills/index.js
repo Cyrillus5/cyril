@@ -85,28 +85,25 @@ function Skills() {
   return (
     <div className="Skills">      
       <h1 className='Skills-title'>Mes Compétences</h1>
-      <p className='Skills-intro'>Mes expériences professionnelles me permettent d'être aujourd'hui polyvalent, autonome, apte à la gestion de projet et de disposer de compétences techniques comme : </p>
-      
+      <p className='Skills-intro'>Mes expériences professionnelles me permettent d'être aujourd'hui polyvalent, autonome, apte à la gestion de projet et de disposer de compétences techniques comme : </p>      
       <div className='Skills-all'>
-      <Box className='Skills-all-Box' sx={{ maxWidth: 1000, height: 500, overflowY: 'scroll', marginTop: '3rem', padding: '0.5rem' }}>
-      <ImageList variant="masonry" cols={5} gap={8}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              className='Skills-all-Box-img'
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-            <ImageListItemBar position="below" title={item.description} />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </Box>
-
-      </div>      
-    
+        <Box className='Skills-all-Box' sx={{ maxWidth: 900,   marginTop: '2rem', padding: '0.5rem' }}>
+          <ImageList variant="masonry" cols={5} gap={8}>
+            {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  className='Skills-all-Box-img'
+                  src={`${item.img}?w=248&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+                <ImageListItemBar position="below" title={item.description} />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </Box>
+      </div> 
     </div>
   );
 }

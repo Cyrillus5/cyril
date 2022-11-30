@@ -206,7 +206,7 @@ function App() {
   return (
     <div className="App"> 
     <div id="large-header" className="large-header">
-      <canvas id="demo-canvas"></canvas>       
+      <canvas className='canvas' id="demo-canvas"></canvas>       
       <div className="main">
         <Nav />
         <Routes>
