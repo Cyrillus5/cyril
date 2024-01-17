@@ -1,15 +1,14 @@
 @use '../../styles/vars';
 @use 'sass:color';
 
-.App {
-  text-align: center;
-  position: relative;
-}
+// .App {
+//   text-align: center;
+//   position: relative;
+// }
 
 .large-header {
   position: absolute;
   width: 100%;
-  background: #333;
   // overflow:scroll;
   overflow-x: hidden;
   background-size: cover;
@@ -18,10 +17,10 @@
   
 }
 
-#large-header {
-  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/07/65/755812093598c83.jpg');
-  background-size: 100% 100%;
-}
+// #large-header {
+//   background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/07/65/755812093598c83.jpg');
+//   background-size: 100% 100%;
+// }
 
 .canvas{
   position:absolute;
@@ -32,7 +31,7 @@
   margin: 0;
   padding: 0;
   color: vars.$color-text;
-  text-align: center;
+  // text-align: right;
   width: auto;
   // height: auto;
   // -webkit-transform: translate3d(0%,-100%,0);

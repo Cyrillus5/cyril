@@ -99,6 +99,7 @@
       margin-top: 1.5rem;
       font-weight: bold;
       z-index: 3;
+      width: 200px;
     }
   
     &-descriptions{
@@ -167,7 +168,7 @@
           // padding: 1rem;
           // height: auto;
           width: 100%;
-         grid-column: 1;
+         grid-column: 1/3;
          grid-row: 4;
        }
    
@@ -176,7 +177,7 @@
           // padding: 1rem;
           // height: auto;
 
-         grid-column: 2/4;
+         grid-column: 3/4;
          grid-row: 4;
         }
     }

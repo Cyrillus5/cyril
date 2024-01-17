@@ -9,6 +9,19 @@ function Experience() {
       <div className='Experience-descriptions'>
         <div className='Experience-descriptions-details'>
           <h2 className='Experience-descriptions-details-h2'>Développeur Web</h2>
+          <h3 className='Experience-descriptions-details-where'>Pretto</h3>
+          <p className='Experience-descriptions-details-when'>janvier 2023 - aujourd'hui</p>
+          <p className='Experience-descriptions-details-comments'>
+            En tant que développeur web full stack chez Pretto, j'ai acquis une solide expérience dans le développement de la plateforme de simulation en utilisant Ruby on Rails et VueJS/Typescript. J'ai également participé aux revues de code et collaboré avec l'équipe Produit et les utilisateurs pour identifier les besoins et concevoir les meilleures fonctionnalités possibles. Mon rôle comprenait également l'amélioration continue des outils de développement et de mise en production.
+          </p>
+          <p className='Experience-descriptions-details-comments'>
+            J'ai pratiqué TypeScript, Vue.js, Ruby, HTML, GitHub, Git, React.js, JavaScript et la gestion de projet. Mon expérience en environnement Scale-up a renforcé ma capacité à travailler dans un environnement dynamique et exigeant.
+          </p>
+          <p className='Experience-descriptions-details-skills'><strong>Compétences :</strong> TypeScript · Vue.js · Ruby · HTML · GitHub · Git · React.js · JavaScript · Gestion de projet</p>
+        </div>  
+
+        <div className='Experience-descriptions-details'>
+          <h2 className='Experience-descriptions-details-h2'>Développeur Web</h2>
           <h3 className='Experience-descriptions-details-where'>Ecole O'clock</h3>
           <p className='Experience-descriptions-details-when'>mai 2022 - octobre 2022</p>
           <p className='Experience-descriptions-details-comments'>CosyWorking : développement d'un site Web permettant à des travailleurs nomades de louer des bureaux chez des particuliers</p>

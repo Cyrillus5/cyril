@@ -4,30 +4,66 @@
 .Nav{
     position: relative;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    // justify-content:space-between;
     // position: relative;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    // margin-right: 1.5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
 
-    &-Button{
-        background-color: color.adjust(vars.$color-button, $alpha: -1);
-        color: vars.$color-text;
-        border: none;
-        font-size: 0.8rem;
-        margin-left: 0.35rem;
-        margin-right: 0.35rem;
+    &-listButton{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 1rem;
 
-        &-selected{
-            color: vars.$color-strong;
+        &-Button{
+            background-color: color.adjust(vars.$color-button, $alpha: -1);
+            color: vars.$color-text;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 0.35rem;
+            margin-right: 0.35rem;
+            margin-top: 0.3rem;
+    
+            &:hover{
+                color: vars.$color-strong;
+            }
         }
-    }
+    }    
 
     &-Me{
         font-weight: bold;
         font-size: 1.2rem;
-        color: vars.$color-text
-    }
-}    
+        color: vars.$color-text;
 
+        &:hover{
+            color: vars.$color-strong;
+        }
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .Nav{
+        width: 100vw;
+        margin-right: 5rem;      
+
+        &-listButton{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-right: 2rem;
+            margin-top: 0.2rem;
+
+            &-Button{
+                min-width: 40px;
+                margin-top: 1rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+}
