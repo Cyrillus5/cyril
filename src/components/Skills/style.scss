@@ -33,11 +33,11 @@
     margin-top: 1.5rem;
     font-weight: bold;
     z-index: 3;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .3em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .3em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
@@ -60,8 +60,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
 
-    &-Box{
-      
+    &-Box{      
       &::-webkit-scrollbar{
         background-color: color.adjust(vars.$color-button, $alpha: -0.9);
         }
@@ -74,7 +73,5 @@
         border-radius: 10px;
       }
     }      
-  }
-  
+  }  
 }
-
